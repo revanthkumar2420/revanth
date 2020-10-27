@@ -1,0 +1,36 @@
+#include<stdio.h>
+void main()
+{
+    int element[3][3];
+    element[0][0]=1;
+    element[0][1]=2;
+    element[0][2]=3;
+    element[1][0]=4;
+    element[1][1]=5;
+    element[1][2]=6;
+    element[2][0]=7;
+    element[2][1]=8;
+    element[2][2]=9;
+    printf("The matrix is:\n");
+    for(int i=0;i<=2;i++)
+    {
+        for(int j=0;j<=2;j++){
+            printf("%d  ",*(*(element+i)+j));
+        }
+        printf("\n");
+    }
+      for(int i=0;i<=2;i++)
+    {
+        for(int j=0;j<=2;j++){
+            if(i==j){
+                sum=sum+element[i][j];
+            }
+             }
+            if(i+j==2){
+                sum1=sum1+element[i][j];
+            }
+        }
+    }
+    printf("sum of right diagonal is:%d\n",sum);
+    printf("sum of left diagonal  is:%d",sum1);
+}
